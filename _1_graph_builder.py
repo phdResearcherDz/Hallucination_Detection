@@ -1,24 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-"""
-PART 1 — LATENT GRAPH BUILDER (UPDATED VERSION)
-
-This upgraded module implements the full pipeline described in the methodology:
-
- ✔ Multi-agent LLM extraction (Gemma 3 12B via Ollama)
- ✔ Free-form entity extraction (no ontology)
- ✔ Free-form relation extraction
- ✔ Embedding-based entity normalization across Q/E/A
- ✔ Construction of latent semantic graphs for:
-      - Question (Gq)
-      - Evidence (Gk)
-      - Answer   (Ga)
- ✔ Vector embeddings for nodes + edges
- ✔ JSON serialization for Part 2 (feature extraction)
-
-This version is fully aligned with the final hallucination detection approach.
-"""
 
 import os, json, time, traceback, regex as re
 import numpy as np

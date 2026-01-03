@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 import torch
 from pytorch_tabnet.tab_model import TabNetClassifier
 import numpy as np

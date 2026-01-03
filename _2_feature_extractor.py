@@ -1,26 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-"""
-PART 2 — FEATURE EXTRACTOR (Enhanced Methodology)
-
-This module loads the latent graphs created in PART 1 (which include:
- - global entity mappings
- - question graph (Gq)
- - knowledge graph (Gk)
- - answer graph (Ga)  [already normalized!]
-
-Then it computes:
- 1. Node-level alignment features
- 2. Edge-level alignment features
- 3. Graph-level structural/embedding features
- 4. Text-graph hybrid semantic features
-
-All outputs are saved into features/features.jsonl.
-
-This module does NOT call LLMs or regenerate any graph.
-"""
-
 import os
 import json
 import time

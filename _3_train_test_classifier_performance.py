@@ -1,24 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-"""
-PART 3 — MedHallu Evaluation Protocol (Enhanced)
-
-This script:
- - Loads features from PART 2 (features.jsonl)
- - Reconstructs train/validation/test splits
- - Trains:
-       * Binary hallucination detector
-       * Multi-class hallucination category classifier
- - Evaluates using MedHallu-style metrics
- - Outputs:
-       * Accuracy, Precision, Recall, F1
-       * Macro-F1
-       * Per-class classification report
-       * Confusion matrix
-       * Feature importance (top-K)
-"""
-
 import os
 import json
 import numpy as np
